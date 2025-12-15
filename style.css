@@ -1,0 +1,192 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: black; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark mode background */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0; 
+}
+
+/* Header */
+header {
+  background-color: #6a0dad; 
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Cards */
+.card, .profile-card {
+  background-color: lavender; 
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Dark mode cards */
+.dark-mode .card,
+.dark-mode .profile-card {
+  background-color: #2a2a40; 
+  color: #e0e0e0; 
+}
+
+/* Profile image */
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Text highlights */
+.highlight {
+  color: #6a0dad; 
+}
+
+.violet {
+  color: DarkViolet;
+}
+
+.red {
+  color: Crimson;
+}
+
+.job-title {
+  color: gray;
+  font-style: italic;
+}
+
+/* Dark mode overrides for accents */
+.dark-mode .highlight {
+  color: plum;
+}
+
+.dark-mode .violet {
+  color: violet;
+}
+
+.dark-mode .red {
+  color: lightcoral;
+}
+
+/* Lists */
+ul {
+  list-style-type: square;
+  margin: 10px 0 10px 20px;
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-weight: bold;
+  color: #333;
+}
+
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+/* Buttons */
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: DarkMagenta;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: DarkViolet;
+}
+
+/* Form styling */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black; 
+}
+
+.dark-mode form input[type="text"],
+.dark-mode form input[type="email"],
+.dark-mode form textarea {
+  background-color: #1e1e1e;
+  color: #e0e0e0; 
+  border: 1px solid #555;
+}
+
+form input[type="submit"] {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: DarkMagenta;
+  color: white;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: DarkViolet;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+h2 {
+  font-size: 28px;   
+}
+
+#Greeting {
+  font-size: 22px;
+  font-weight: bold; 
+}
+
+.subtext {
+  font-size: 18px;
+  font-style: italic; 
+}
+
+#currentDateTime {
+  font-size: 20px;
+  color: #9d8aa8; 
+}
+
