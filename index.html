@@ -13,8 +13,8 @@
   <button id="themeBtn">Toggle Dark Mode</button>
   <button id="editJobBtn">Edit Job Title</button>
   <button id="toggleSkillsBtn">Hide Skills</button>
-  <button id="lab1Btn">Lab1</button>
-  <button id="lab2Btn">Lab2</button>
+  <button id="lab1Btn">Lab2</button>
+  <button id="lab2Btn">Lab3</button>
 
   <!-- HEADER -->
   <header>
@@ -100,6 +100,16 @@
         <div id="Greeting">Loading Greeting...</div>      
         <div class="subtext">Wonderful day we we're having!</div>
         <p id="currentDateTime"></p>
+      </div>
+
+      <div class="Lab2" class="lab1content">
+        <iframe src="lab1.html"></iframe>
+        <button onclick="loadLab2()">Load Lab 2</button>
+        <script> 
+        function loadLab2(){
+      document.getElemenentById("labFrame).src="lab1.html;
+        }
+        </script>
       </div>
 
     </section>
