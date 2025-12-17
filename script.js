@@ -124,5 +124,5 @@ window.onload = setGreeting;
   // Load lab3.html when Lab3 button is clicked
   document.getElementById("lab3Btn").addEventListener("click", function() {
     document.getElementById("labFrame").src = "lab3.html";
-document.getElementById("labFrame").src = "labs/lab2.html";
+
  
