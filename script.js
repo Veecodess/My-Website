@@ -116,5 +116,13 @@ window.onload = setGreeting;
     setInterval(updateDateTime, 1000); // Update every 1000 milliseconds (1 second)
 
 //I. Lab2 and Lab3
+ // Load lab2.html when Lab2 button is clicked
+  document.getElementById("lab2Btn").addEventListener("click", function() {
+    document.getElementById("labFrame").src = "lab2.html";
+  });
+ 
+  // Load lab3.html when Lab3 button is clicked
+  document.getElementById("lab3Btn").addEventListener("click", function() {
+    document.getElementById("labFrame").src = "lab3.html";
 document.getElementById("labFrame").src = "labs/lab2.html";
  
