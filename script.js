@@ -115,3 +115,6 @@ window.onload = setGreeting;
     // Optionally, update the time every second for a live clock effect
     setInterval(updateDateTime, 1000); // Update every 1000 milliseconds (1 second)
 
+//I. Lab2 and Lab3
+document.getElementById("labFrame").src = "labs/lab2.html";
+ 
