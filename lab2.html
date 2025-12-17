@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Buttons -->
+  <button id="themeBtn">Toggle Dark Mode</button>
+  <button id="editJobBtn">Edit Job Title</button>
+  <button id="toggleSkillsBtn">Hide Skills</button>
+  <button id="lab1Btn">Lab1</button>
+  <button id="lab2Btn">Lab2</button>
+
+  <!-- HEADER -->
+  <header>
+    <h1 class="title">MY PROFILE</h1>
+  </header>
+
+  <hr>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- LEFT COLUMN -->
+    <section class="left-column">
+      <div class="profile-card">
+        <img src="Media.jpg" alt="myphoto.jpg" class="profile-img">
+
+        <h2 class="highlight">Victoria Denisse D. Novilla</h2>
+        <p>20 years old</p>
+        <p id="jobTitle" class="job-title">Bachelor of Science in Information Technology</p>
+        <p class="job-title">Currently Studying at National University - Fairview</p>
+      </div>
+
+      <div class="card">
+        <h3 class="highlight">Contact</h3>
+        <p>Email: <a href="mailto:novillavd@students.nu-fairview.edu.ph">novillavd@students.nu-fairview.edu.ph</a></p>
+      </div>
+
+      <div class="card" id="skillsSection">
+        <h3 class="highlight">Experience and Skills</h3>
+        <ul>
+          <li>Designing</li>
+          <li>Sketching</li>
+          <li>Creatives Member in NUFV - PEERS</li>
+          <li>Coding in Java using NetBeans</li>
+        </ul>
+      </div>
+
+      <!-- NEW MESSAGE BOX -->
+      <div class="card">
+        <h2 class="highlight">Message Me</h2>
+        <form action="submit" method="post">
+          <p>
+            Name:<br>
+            <input type="text" name="name">
+          </p>
+          <p>
+            Email:<br>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <input type="submit" value="Send">
+          </p>
+        </form>
+      </div>
+      <!-- END MESSAGE BOX -->
+
+    </section>
+
+    <!-- RIGHT COLUMN -->
+    <section class="right-column">
+      <div class="card">
+        <h3 class="highlight">Personal Introduction</h3>
+        <p><b>Hobbies</b></p>
+        <ul>
+          <li>Drawing (Traditional and Digital)</li>
+          <li>Listening to Music</li>
+          <li>Playing Online Games</li>
+          <li>Cooking and Baking</li>
+          <li>Junk Journaling</li>
+        </ul>
+      </div>
+
+      <div class="card about-me">
+        <h2>About Me</h2>
+        <p>My favorite color is <span class="violet">Purple</span>.</p>
+        <p>I am more likely an <span class="violet">Introvert (INFJ)</span>.</p>
+        <p>My favorite band is <span class="violet">BTS</span> as I love their music.</p>
+        <p>I love <span class="red">Strawberry</span> flavored desserts.</p>
+        <p>In every flavors of dishes, I prefer <span class="red">Spicy and Savory</span> foods.</p>
+      </div>
+
+      <div class="card about-me">
+        <h2>Today's Date and Time</h2>
+        <div id="Greeting">Loading Greeting...</div>      
+        <div class="subtext">Wonderful day we we're having!</div>
+        <p id="currentDateTime"></p>
+      </div>
+
+      <div class="Lab1" class="lab1content">
+        <iframe src=""></iframe>
+        
+      </div>
+
+    </section>
+  </main>
+
+  <hr>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong>WebProg - Web Programming 2025</strong>
+  </footer>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
